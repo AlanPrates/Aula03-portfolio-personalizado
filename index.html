@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcout icon" href="img/link-da-web.png"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Portifolio STI 2021.2</title>
+    
+    
+</head>
+<body class="body">
+    <div class="cat1">
+    <img src="img/perfil.png"alt="Generic placeholder image" width="200" height="200"/>
+    <ul class="icone-rede-social">
+    <a href="https://www.facebook.com/"> <img class="facebook" src="img/social/facebook.png"></a>
+    <a href="https://www.instagram.com/"> <img class="instagram" src="img/social/instagram.png"></a> 
+    <a href="https://twitter.com/"> <img class="twitter" src="img/social/twitter.png"></a>
+</ul>
+<div class="page">
+      <text>【 ₩ 】</text>
+      <text>Ligar Lanterna Modo Escuro</text>
+</div>      
+    <center><div class="dark_mode">
+    </div> 
+   </center>
+    <h1 class="h1">Alan Prates dos Santos</h1>
+    <h3><span  class="h2">Perfil profissional:</span></h3>
+    
+        <h3 class="p"><p> técnico em Informática, enquanto agente de sua própria história e com sua formação técnica, utilizando-se dos conhecimentos adquiridos deverá enfrentar e superar os desafios da vida e com sua formação liderar, respeitando a participação coletiva. Construindo espaços democráticos, 
+        gerenciar e capacitar equipes com desempenho inerentes à 
+        função. Com uma forte formação ética, criativa, humanística, técnica, solidária e crítica, devendo ser um sujeito autônomo, responsável, investigador e com capacidade para compreender o significado das ciências, das artes, das linguagens e das tecnologias específicas, 
+        desenvolvendo atividades na área da tecnologia da informação e comunicação, trabalhando sempre de forma integrada, sendo um instrumento de transformação da realidade.</p></h3>
+   
+   
+  
+        
+            <p><a href="https://github.com/AlanPrates" class="h2"><h3>Ir para GitHub </h3> </a>
+            <p><a href="https://play.google.com/store?hl=pt_BR&gl=US" class="h2"><h3>Progeto sob demanda para:</h3></a>  
+            <a href="https://www.apple.com/br/store"><img class="im1" src="img/app-store.png"></a>
+            <a href="https://play.google.com/store?hl=pt_BR&gl=US"> <img class="im1" src="img/google-play.png"></a> 
+      <footer class="rodape" >
+           <!--
+             <div> <span class="cat3 "></span>
+            <img src="img/banner_rodade_site.png"/>	
+           --> 		  
+            <img src="img/Rodapé-site-01-1024x146.png">
+        </div> 
+            
+    </footer> 
+</div> 
+  <script>
+  function updateFlashlight(e) {
+    var style = document.body.style;
+    style.backgroundPositionX = e.pageX - 250 + "px";
+    style.backgroundPositionY = e.pageY - 250 + "px";
+  }
+
+  document.querySelector(".dark_mode").onclick = function(e) {
+    var body = document.body;
+    body.classList.toggle("dark");
+    if (body.classList.contains("dark")) {
+      updateFlashlight(e);
+      ["mousemove", "touchstart", "touchmove", "touchend"].forEach(function(s) {
+        document.documentElement.addEventListener(s, updateFlashlight, false);
+      });
+    } else {
+      ["mousemove", "touchstart", "touchmove", "touchend"].forEach(function(s) {
+        document.documentElement.removeEventListener(s, updateFlashlight, false);
+      });
+    }
+  }
+</script>            
+</body>
+</html>
